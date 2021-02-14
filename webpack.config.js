@@ -44,6 +44,13 @@ module.exports = {
         ],
       },
       { test: /\.handlebars$/, loader: "handlebars-loader" },
+      {
+        test: /\.html$/,
+        loader: "underscore-template-loader",
+        query: {
+            engine: 'lodash',
+        }
+      }
     ],
   },
   plugins: [
