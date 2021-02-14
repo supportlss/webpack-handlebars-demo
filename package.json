@@ -26,9 +26,6 @@
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.10.4",
-    "expose-loader": "^1.0.3",
-    "handlebars": "^4.7.6",
-    "handlebars-loader": "^1.7.1",
     "jquery": "^3.5.1",
     "style-loader": "^1.1.3"
   }

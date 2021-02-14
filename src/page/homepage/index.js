@@ -1,5 +1,1 @@
-import Book from "../../components/bookList/index";
-
-$(function () {
-  Book.render("booklist");
-});
+console.log('hello world')
