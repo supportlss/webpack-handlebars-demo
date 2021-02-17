@@ -17,6 +17,7 @@ module.exports = {
   // resolve: {
   //   fallback: path.join(__dirname, "helpers"),
   // },
+
   module: {
     rules: [
       {
@@ -49,10 +50,16 @@ module.exports = {
         loader: "underscore-template-loader",
         query: {
             engine: 'lodash',
-        }
+            macros: {
+              copyright: function () {
+                  return "'<p>Copyright FakeCorp 2014 - 2016</p>'";
+              }
+            }
+        }  
       }
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, `./src/page/homepage/index.html`),
