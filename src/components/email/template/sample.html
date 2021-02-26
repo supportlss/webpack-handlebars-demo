@@ -1,0 +1,424 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+  <title>Mobile Responsive Email</title>
+
+  <style type="text/css">
+    .ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .mobile {
+      display: none;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    @media only screen and (max-width: 479px) {
+      /**change to max-device-width after testing**/
+
+      td[class="desktop"],
+      table[class="desktop"] {
+        display: none !important;
+      }
+
+      td[class="mobile_only"],
+      table[class="mobile_only"],
+      img[class="mobile_only"],
+      div[class="mobile_only"],
+      tr[class="mobile_only"] {
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: inherit !important;
+        font-size: 15px !important;
+        line-height: 21px !important;
+        visibility: visible !important;
+      }
+
+      img[class="mobile_header"] {
+        width: 320px !important;
+        height: 243px !important;
+        display: block !important;
+        overflow: visible !important;
+        visibility: visible !important;
+      }
+
+      td[class="full_width"],
+      table[class="full_width"] {
+        width: 320px !important;
+      }
+
+      td[class="medium_width"],
+      table[class="medium_width"] {
+        width: 272px !important;
+      }
+
+      td[class="intro_text"],
+      table[class="intro_text"] {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body bgcolor="#f5f5f5"
+  style="background-color:#f5f5f5; margin:0; padding:0;-webkit-font-smoothing: antialiased;width:100% !important;-webkit-text-size-adjust:none;"
+  topmargin="0">
+  <div style="font-size: 1px; color: #f5f5f5; display: none;">Short description appears as email content preview.</div>
+
+
+  <!--wrapper table-->
+  <table width="100%" bgcolor="#f5f5f5" style="background-color:#f5f5f5;" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+
+        <table class="full_width" align="center" width="650" border="0" cellpadding="0" cellspacing="0"
+          style="padding-top: 12px;">
+          <tr>
+            <td><img alt="Logo" src="http://placehold.it/640x150.jpg" width="320" height="75" border="0" hspace="0"
+                vspace="0" style="display:block; vertical-align:top;"></td>
+            <td class="desktop" align="right" valign="bottom"
+              style="color:#333333; font-family: Helvetica, sans-serif; font-size: 11px; line-height:13px; padding-top:24px;">
+              Insert Subject line <div class="full_width"><a href="#" target="_blank" style="color:#006699;">Call to
+                  action</a> | <a href="#" target="_blank" style="color:#006699;">Read online</a></div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- header text mobile-->
+
+        <div class="mobile_only" style="width:0;max-height:0;overflow:hidden;float:left;display:none;">
+          <table class="mobile_only" align="center" width="320" height="0" border="0" cellpadding="0" cellspacing="0"
+            style="overflow:hidden;display:none;visibility:hidden;width:0;max-height:0;">
+            <tr class="mobile_only" style="overflow:hidden;visibility:hidden;width:0;max-height:0;">
+              <td class="mobile_only" valign="top"
+                style="color:#333333; font-family: Helvetica, sans-serif;font-size:1px;line-height:1px;overflow:hidden;height:0px;visibility:hidden;width:0;max-height:0;padding-left: 12px; padding-right: 12px; padding-bottom: 0px;padding-top: 0px;">
+                <div class="mobile_only"
+                  style="overflow:hidden;height:0px;font-size:1px;line-height:1px;visibility:hidden;width:0;max-height:0;">
+                  <br />Insert subject line<br /><a href="#" target="_blank" style="color:#006699;">Call to action</a> |
+                  <a href="#" target="_blank" style="color:#006699;">Read online</a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- spacer -->
+
+  <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="12" bgcolor="#f5f5f5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+    </tr>
+  </table>
+
+
+  <!-- wrapper table-->
+  <table width="100%" bgcolor="#f5f5f5" style="background-color:#f5f5f5;" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;</td>
+
+      <td class="full_width" width="650" align="center"
+        style="border-left:1px solid #d8d8d8; border-right:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; border-top:1px solid #d8d8d8;background-color: #ffffff; padding-bottom: 30px;">
+
+        <!-- header image -->
+
+        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="desktop"><a target="_blank" href="#"><img width="650" vspace="0" hspace="0" border="0"
+                  height="400" style="display:block; vertical-align:top;" src="http://placehold.it/1300x800.jpg"
+                  alt="Headline here"></a></td>
+            <td class="mobile_only" style="width:0; overflow:hidden; display:none;visibility:hidden;"><a target="_blank"
+                href="#"><img width="320" vspace="0" hspace="0" border="0" height="243"
+                  style="width:0; overflow:hidden; display:none;visibility:hidden;" class="mobile_header"
+                  src="http://placehold.it/640x486.jpg" alt="Headline Here"></a></td>
+          </tr>
+        </table>
+
+        <!--spacer-->
+
+        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="24" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+          </tr>
+        </table>
+
+        <!-- headline-->
+
+        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="desktop" width="42">&nbsp;</td>
+            <td width="24">&nbsp;</td>
+            <td width="60" height="60"><a href="#"><img alt="CTA1" src="http://placehold.it/120x120.jpg" width="60"
+                  height="60" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"></a></td>
+            <td width="18">&nbsp;</td>
+            <td class="intro_text"
+              style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:18px; line-height:22px;">
+              Get Example1, Example2 and Example3 software &mdash; all in one monthly subscription.
+            </td>
+            <td width="24">&nbsp;</td>
+            <td class="desktop" width="42">&nbsp;</td>
+          </tr>
+        </table>
+
+        <!--spacer-->
+
+        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="24" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+          </tr>
+        </table>
+
+
+        <!-- main content - three columns desktop layout-->
+
+        <table class="desktop" align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="67">&nbsp;</td>
+            <td valign="top">
+              <table align="center" width="152" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="desktop" valign="top">
+                    <a href="#" target="_blank"><img alt="Image1" src="http://placehold.it/294x166.jpg" width="147"
+                        height="83" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top"
+                    style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px; padding-top:12px;padding-bottom:18px;">
+                    <strong><span style="color: #ff6600">NEW</span> The meade lorem ipsum dolor.</strong><br />
+                    <div
+                      style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px;">
+                      Sure every file you send is a file received. Confirm who got what file, when, using the online
+                      dashboard.</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="30">&nbsp;</td>
+            <td valign="top">
+              <table align="center" width="152" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top">
+                    <a href="#" target="_blank"><img alt="Image2" src="http://placehold.it/294x166.jpg" width="147"
+                        height="83" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top"
+                    style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px; padding-top:12px;padding-bottom:18px;">
+                    <strong>With emtcer lorem ipsum dolor.</strong><br />
+                    <div
+                      style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px;">
+                      Every new file you send is a file received. Confirm got what file, when, using the online
+                      dashboard.</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="30">&nbsp;</td>
+            <td valign="top">
+              <table align="center" width="152" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="desktop" valign="top">
+                    <a href="#" target="_blank"><img alt="Image3" src="http://placehold.it/294x166.jpg" width="147"
+                        height="83" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top"
+                    style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px; padding-top:12px;padding-bottom:18px;">
+                    <strong>Now lorem ipsum dolor esta.</strong><br />
+                    <div
+                      style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:17px;">
+                      Make sure every file you send is a file received. Confirm who got what file, when, using the.
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="67">&nbsp;</td>
+          </tr>
+        </table>
+
+        <!--/three columns web layout -->
+
+
+        <!-- main content three rows mobile layout-->
+        <div class="mobile_only" style="width:0;max-height:0;overflow:hidden;float:left;display:none;">
+          <table class="mobile_only" align="center" width="100%" height="0" border="0" cellpadding="0" cellspacing="0"
+            style="overflow:hidden;display:none;visibility:hidden;width:0;max-height:0;">
+            <tr class="mobile_only" style="overflow:hidden;visibility:hidden;width:0;max-height:0;">
+              <td width="30">&nbsp;</td>
+              <td class="mobile_only" valign="top"
+                style="color:#333333; font-family: Helvetica, sans-serif;text-align:left;font-size:1px;line-height:1px;overflow:hidden;height:0px;visibility:hidden;width:0;max-height:0;padding-left: 12px; padding-right: 12px; padding-bottom: 0px;padding-top: 0px;">
+                <div class="mobile_only"
+                  style="overflow:hidden;height:0px;font-size:1px;line-height:1px;visibility:hidden;width:0;max-height:0;">
+                  <strong><span style="color: #ff6600">NEW</span> With emtcer lorem ipsum dolor.</strong><br />
+                  Every new file you send is a file received. Confirm got what file, when, using the online
+                  dashboard.<br /><br />
+                </div>
+              </td>
+              <td width="30">&nbsp;</td>
+            </tr>
+          </table>
+          <table class="mobile_only" align="center" width="100%" height="0" border="0" cellpadding="0" cellspacing="0"
+            style="overflow:hidden;display:none;visibility:hidden;width:0;max-height:0;">
+            <tr class="mobile_only" style="overflow:hidden;visibility:hidden;width:0;max-height:0;">
+              <td width="30">&nbsp;</td>
+              <td class="mobile_only" valign="top"
+                style="color:#333333; font-family: Helvetica, sans-serif;text-align:left;font-size:1px;line-height:1px;overflow:hidden;height:0px;visibility:hidden;width:0;max-height:0;padding-left: 12px; padding-right: 12px; padding-bottom: 0px;padding-top: 0px;">
+                <div class="mobile_only"
+                  style="overflow:hidden;height:0px;font-size:1px;line-height:1px;visibility:hidden;width:0;max-height:0;">
+                  <strong>With emtcer lorem ipsum dolor.</strong><br />
+                  Every new file you send is a file received. Confirm got what file, when, using the online
+                  dashboard.<br /><br />
+                </div>
+              </td>
+              <td width="30">&nbsp;</td>
+            </tr>
+          </table>
+
+          <table class="mobile_only" align="center" width="100%" height="0" border="0" cellpadding="0" cellspacing="0"
+            style="overflow:hidden;display:none;visibility:hidden;width:0;max-height:0;">
+            <tr class="mobile_only" style="overflow:hidden;visibility:hidden;width:0;max-height:0;">
+              <td width="30">&nbsp;</td>
+              <td class="mobile_only" valign="top"
+                style="color:#333333; font-family: Helvetica, sans-serif;text-align:left;font-size:1px;line-height:1px;overflow:hidden;height:0px;visibility:hidden;width:0;max-height:0;padding-left: 12px; padding-right: 12px; padding-bottom: 0px;padding-top: 0px;">
+                <div class="mobile_only"
+                  style="overflow:hidden;height:0px;font-size:1px;line-height:1px;visibility:hidden;width:0;max-height:0;">
+                  <strong>With emtcer lorem ipsum dolor.</strong><br />
+                  Every new file you send is a file received. Confirm got what file, when, using the online
+                  dashboard.<br /><br />
+                </div>
+              </td>
+              <td width="30">&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <!-- /three rows mobile layout-->
+
+
+        <!-- bottom column-->
+
+        <table class="medium_width" align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="desktop" width="67" style="padding-top:18px;">&nbsp;</td>
+            <td
+              style="border-top: 1px solid #d9d9d9; color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:14px; line-height:20px; padding-top:18px; padding-bottom:18px;">
+              <strong>Store and access files on Website.com.</strong><br>
+              Apply your organization's custom branding to email and download pages so your customers know the files you
+              are sending are from you recognizing your logo at the top of your notifications.<br>
+              <a href="#" style="color:#006699; text-decoration:underline;" target="_blank">Learn more &#8250;</a>
+            </td>
+            <td class="desktop" width="34" style="border-top: 1px solid #d9d9d9;padding-top:18px;">&nbsp;</td>
+            <td class="desktop" style="border-top: 1px solid #d9d9d9; padding-top:18px; padding-bottom:18px;"><img
+                alt="Image4" src="http://placehold.it/294x166.jpg" width="147" height="83" border="0" hspace="0"
+                vspace="0" style="display:block; vertical-align:top;"></td>
+            <td class="desktop" width="67" style="padding-top:18px;">&nbsp;</td>
+          </tr>
+        </table>
+
+
+        <!-- optional use of scene7 for headline -->
+
+        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="padding-top: 12px;">
+          <tr>
+            <td class="desktop" style="padding-bottom:8px;"><img alt="Software Name Here in Adobe Clean"
+                src="http://s7d9.scene7.com/is/image/AdobeDemandCreative/?fmt=png-alpha&size=650,30&wid=650&textAttr=72,crisp&textPs=%7B%5C*%5Ciscolortbl%3B333333%3B%5Cfonttbl%7B%5Cf0%20Adobe%20Clean%20Light%3B%7D%7D%5Cf0%5Cqc%5Cfs60%5Csl-700%5Ckerningoptical%5Ccf1Scene7%20for%20unsafe%20web%20fonts"
+                align="center" width="650" height="30" vspace="0" hspace="0" border="0"
+                style="display:block; vertical-align:top;"></td>
+            <td class="mobile_only"
+              style="width:0; overflow:hidden; display:none;visibility:hidden;padding-bottom:2px;"><img
+                alt="Scene7 for Non-Web Safe Font" class="mobile_only"
+                src="http://s7d9.scene7.com/is/image/AdobeDemandCreative/?fmt=png-alpha&size=320,30&wid=320&textAttr=72,crisp&textPs=%7B%5C*%5Ciscolortbl%3B333333%3B%5Cfonttbl%7B%5Cf0%20Adobe%20Clean%20Light%3B%7D%7D%5Cf0%5Cqc%5Cfs50%5Csl-500%5Ckerningoptical%5Ccf1%20Scene7%20for%20unsafe%20web%20fonts"
+                align="center" width="320" height="30" vspace="0" hspace="0" border="0"
+                style="display:block; vertical-align:top;width:0; overflow:hidden; display:none;visibility:hidden;">
+            </td>
+          </tr>
+        </table>
+
+
+        <table class="medium_width" align="center" width="380" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td
+              style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:14px; line-height:20px; padding-bottom:18px;text-align:center;">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </td>
+          </tr>
+        </table>
+
+
+        <!-- social media links -->
+
+        <table class="medium_width" align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="desktop" width="67" style="padding-top:12px;">&nbsp;</td>
+            <td align="right" valign="top" style="border-top:1px solid #d9d9d9; padding-top:12px;">
+              <table width="200" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td
+                    style="color:#333333; font-family: Helvetica, sans-serif;text-align:left; font-size:13px; line-height:15px;">
+                    Social Media Links</td>
+                  <td valign="top"
+                    style="color:#006699; font-family: Helvetica, sans-serif;text-align:left; font-size:12px; line-height:16px;">
+                    <table width="66" align="right" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="24"><a href="#" alias="Facebook" target="_blank"><img alt="Facebook"
+                              src="http://placehold.it/32x32.jpg" width="16" height="16" border="0" hspace="0"
+                              vspace="0" style="display:block; vertical-align:top;"></a></td>
+                        <td width="24"><a href="#" alias="Twitter" target="_blank"><img alt="Twitter"
+                              src="http://placehold.it/32x32.jpg" width="16" height="16" border="0" hspace="0"
+                              vspace="0" style="display:block; vertical-align:top;"></a></td>
+                        <td width="16"><a href="#" alias="Google Plus" target="_blank"><img alt="Google Plus"
+                              src="http://placehold.it/32x32.jpg" width="16" height="16" border="0" hspace="0"
+                              vspace="0" style="display:block; vertical-align:top;"></a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="desktop" width="67" style="padding-top:12px;">&nbsp;</td>
+          </tr>
+        </table>
+
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <!--/end wrapper-->
+
+
+  <!-- legal disclaimer -->
+
+  <table class="full_width" bgcolor="#f5f5f5" align="center" width="650" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="desktop" width="22">&nbsp;</td>
+      <td align="center"
+        style="color:#a1a1a1; font-family: Helvetica, sans-serif;text-align:left; font-size:11px; line-height:13px; text-align:left; padding-top:20px; padding-bottom:40px;">
+        Legal, Copyright, Unsubscribe, Privacy Information.</td>
+      <td class="desktop" width="22">&nbsp;</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

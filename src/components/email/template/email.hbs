@@ -1,0 +1,24 @@
+<p>
+  {{ctx.messages.bestUser}}
+</p>
+<img src="{{ctx.baseUrl}}/medias/{{ctx.headerImage}}" />
+<div>
+  {{#if (gt ctx.data.homeDelivery.length 0)}}
+    {{#if (gt ctx.data.homeQty 1)}}
+      {{setVar "homeItem" ctx.messages.items}}
+    {{else}}
+      {{setVar "homeItem" ctx.messages.item}}
+    {{/if}}
+  {{/if}}
+  <p>
+    {{json homeItem}}
+  </p>
+</div>
+<div>
+  {{#each ctx.data.homeDelivery as |homeItem|}}
+    {{homeItem.product}}{{homeItem.options}}
+  {{/each}}
+  <p>
+    aaa
+  </p>
+</div>

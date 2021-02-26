@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --config webpack.config.js --open"
+    "dev": "cross-env NODE_ENV='dev' webpack-dev-server --config webpack.config.js --open",
+    "watch": "cross-env NODE_ENV='watch' webpack --progress"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -26,10 +27,17 @@
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.10.4",
+    "cross-env": "^7.0.3",
+    "currencyformatter.js": "^1.0.5",
     "expose-loader": "^1.0.3",
     "handlebars": "^4.7.6",
     "handlebars-loader": "^1.7.1",
     "jquery": "^3.5.1",
+    "just-handlebars-helpers": "^1.0.18",
+    "moment": "^2.22.1",
+    "nodemailer": "^6.4.18",
+    "prettier": "^2.2.1",
+    "sprintf-js": "^1.1.1",
     "style-loader": "^1.1.3"
   }
 }

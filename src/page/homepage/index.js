@@ -1,5 +1,5 @@
-import Book from "../../components/bookList/index";
+import Email from "../../components/email/index";
 
 $(function () {
-  Book.render("booklist");
+  Email.render("booklist");
 });

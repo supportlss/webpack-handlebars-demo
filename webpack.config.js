@@ -3,6 +3,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const path = require("path");
+const mode = process.env.NODE_ENV === 'dev' ? 'development' : 'production'
+const watch = process.env.NODE_ENV === 'watch'
 
 module.exports = {
   entry: {
@@ -13,10 +15,8 @@ module.exports = {
     // publicPath: "./" 会给引入的文件前面加个前缀，主要是用于生产环境
     filename: "[name].js",
   },
-  mode: "development",
-  // resolve: {
-  //   fallback: path.join(__dirname, "helpers"),
-  // },
+  mode,
+  watch,
   module: {
     rules: [
       {
@@ -43,7 +43,17 @@ module.exports = {
           },
         ],
       },
-      { test: /\.handlebars$/, loader: "handlebars-loader" },
+      { test: /\.(hbs|handlebars)$/, 
+        loader: "handlebars-loader",
+        options: {
+          runtime: path.resolve(__dirname, './src/config/handlebars.js'),
+        }
+        // query: { 
+        //   helperDirs: [
+        //     path.join(__dirname, './src/helpers')
+        //   ]
+        // }
+      },
     ],
   },
   plugins: [
@@ -80,4 +90,7 @@ module.exports = {
   devServer: {
     hot: true,
   },
+  resolve: {
+    extensions: ['.hbs', '.handlebars', '.js', '.jsx'],
+  }
 };
